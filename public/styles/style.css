@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+}
+.box-wrapper {
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 15%;
+}
+.host {
+    font-family: monospace;
+}

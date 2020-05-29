@@ -1,7 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 const app = new express();
-const errGif = require('fs').readFileSync('./public/images/404.gif');
+const img = require('fs').readFileSync('./public/images/404.jpg');
 
 app.listen(process.env.PORT || 3000);
 app.use(express.static(process.cwd() + '/public'))
@@ -26,8 +26,8 @@ app.get('*', (req, res) => {
         })
         .catch(err => {
             // console.log(err.message);
-            res.set('Content-Type', 'image/gif');
-            res.send(errGif);
+            res.set('Content-Type', 'image/jpg');
+            res.send(errimg);
         })
 });
 

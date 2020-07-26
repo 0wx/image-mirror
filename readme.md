@@ -1,14 +1,14 @@
 # Freedom is your choice!
 
-live demo : http://image-awx-app.glitch.me/
+live demo : https://image-mirror.herokuapp.com
 
 Simply use this url to cover up your blocked url
 
-eg. ```http://image-awx-app.glitch.me/https://yourblockedurl.com/image.png```
+eg. ```https://image-mirror.herokuapp.com/https://yourblockedurl.com/image.png```
 
 ## Usage :
 ```
-<img src="http://image-awx-app.glitch.me/https://yourblockedurl.com/image.png">
+<img src="https://image-mirror.herokuapp.com/https://yourblockedurl.com/image.png">
 ```
 
 ## Installation 

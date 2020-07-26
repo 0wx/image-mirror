@@ -6,7 +6,10 @@ const img = require('fs').readFileSync('./public/images/404.jpg');
 app.listen(process.env.PORT || 3000);
 app.use(express.static(process.cwd() + '/public'))
 app.get('/', (req, res) => res.sendFile('./public/index.html'));
+const cors = require('cors')
 
+
+app.use(cors())
 app.get('*', (req, res) => {
     let url = req.originalUrl.replace('/', '');
     axios.get(url, {

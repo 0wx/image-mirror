@@ -30,7 +30,7 @@ app.get('*', (req, res) => {
         .catch(err => {
             // console.log(err.message);
             res.set('Content-Type', 'image/jpg');
-            res.send(errimg);
+            res.send(img);
         })
 });
 
